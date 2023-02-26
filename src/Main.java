@@ -14,7 +14,7 @@ public class Main {
             result = "";
             System.out.print("Enter an actor or (q) to quit: ");
             name = scan.nextLine();
-            result += name + " -> ";
+            result += name + " -> "; // Does not work for actors with a bacon number of 4 because it will take too long
             if(!test.directKevin(name)){
                 boolean found = false;
                 for(String actor : test.commonActors(test.career(name),test.getKevin())){
